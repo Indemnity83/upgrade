@@ -1,0 +1,35 @@
+{
+    "name": "solderio/upgrade",
+    "description": "Provides upgrade support from previous versions of Solder.",
+    "keywords": ["solder", "upgrade"],
+    "support": {
+        "issues": "https://github.com/solderio/upgrade/issues",
+        "source": "https://github.com/solderio/upgrade"
+    },
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "~5.5",
+        "illuminate/console": "~5.5",
+        "illuminate/database": "~5.5",
+        "doctrine/dbal": "^2.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "SolderIO\\Upgrade\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SolderIO\\Upgrade\\SolderUpgradeServiceProvider"
+            ]
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kyle Klaus",
+            "email": "kklaus@indemnity83.com"
+        }
+    ]
+}
